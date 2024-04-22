@@ -8,12 +8,14 @@ function App() {
 
   return (
     <>
-      <main>
-        <h1>{people.length} Birth Today</h1>
-        <List people={people} />
-        <button type="button" onClick={() => setPeople([])}>
-          Clear All
-        </button>
+      <main className="out-container">
+        <div className="inner-container">
+          <h1>{people.length} Birth Today</h1>
+          <List people={people} />
+          <button type="button" onClick={() => setPeople([])}>
+            Clear All
+          </button>
+        </div>
       </main>
     </>
   );
